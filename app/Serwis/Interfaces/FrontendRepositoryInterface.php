@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Panel\Interfaces;
+namespace App\Serwis\Interfaces;
 
 class FrontendRepositoryInterface {
 

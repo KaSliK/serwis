@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/panel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/panel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logoAdAwards.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +150,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hoj3IWjdUoEllOR5N9J9gkG6qM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -222,6 +217,7 @@
       <workItem from="1601014100602" duration="26946000" />
       <workItem from="1601278468636" duration="5197000" />
       <workItem from="1610902264399" duration="700000" />
+      <workItem from="1610984074085" duration="1182000" />
     </task>
     <servers />
   </component>
@@ -233,7 +229,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

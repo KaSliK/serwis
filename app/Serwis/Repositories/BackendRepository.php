@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Panel\Repositories;
+namespace App\Serwis\Repositories;
 
 
 
 use App\Models\Example;
 use App\Models\Photo;
-use App\Panel\Traits\PhotoTrait;
+use App\Serwis\Traits\PhotoTrait;
 use http\Env\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;

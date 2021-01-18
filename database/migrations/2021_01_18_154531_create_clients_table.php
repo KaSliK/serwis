@@ -17,9 +17,12 @@ class CreateClientsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('surname');
+            $table->string('email');
+            $table->string('phone_number');
             $table->text('street');
             $table->string('city');
             $table->string('post_code');
+            $table->timestamps();
 
         });
     }

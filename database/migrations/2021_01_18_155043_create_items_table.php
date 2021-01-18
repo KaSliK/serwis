@@ -15,7 +15,7 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('client_id');
+            $table->bigInteger('client_id')->unsigned();
             $table->foreign('client_id')->references('id')->on('clients');
             $table->string('brand');
             $table->string('model');

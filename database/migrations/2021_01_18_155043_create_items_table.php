@@ -21,6 +21,7 @@ class CreateItemsTable extends Migration
             $table->string('model');
             $table->text('description');
             $table->integer('price');
+            $table->timestamps();
         });
     }
 

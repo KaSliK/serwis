@@ -1,0 +1,45 @@
+.side-nav.wide {
+    width: 10rem !important;
+}
+
+.separate-line {
+    background-color: #E9534A;
+    height: 4px;
+    margin: 0 auto;
+    width: 5%;
+    margin-bottom: 2vh;
+}
+
+body {
+    background-color: #f4f5f7;
+}
+.file-field input.file-path {
+    background: none;
+}
+
+.arrowBack {
+    padding-right: 10px;
+    font-size: 2rem;
+    position: absolute;
+}
+
+#adawardsIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: inline-block;
+}
+
+.br-sideright {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    bottom: 0;
+    z-index: 2000;
+    width: 280px;
+    background-color: #1D2939;
+    transition: all 0.2s ease-in-out;
+}

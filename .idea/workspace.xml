@@ -7,10 +7,10 @@
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ClientFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ClientFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ItemFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ItemFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Serwis/Repositories/ClientsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serwis/Repositories/ClientsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/clients/clients.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/clients/clients.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/clients/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/clients/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +234,7 @@
       <workItem from="1610902264399" duration="700000" />
       <workItem from="1610984074085" duration="6924000" />
       <workItem from="1611077213462" duration="1868000" />
-      <workItem from="1611247686063" duration="7678000" />
+      <workItem from="1611247686063" duration="9875000" />
     </task>
     <servers />
   </component>

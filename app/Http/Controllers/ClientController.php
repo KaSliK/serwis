@@ -64,7 +64,7 @@ class ClientController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('backend.clients.edit', ['client' => $this->cR->getClient($id)]);
     }
 
     /**
@@ -76,7 +76,8 @@ class ClientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->cR->updateClient($request, $id);
+        return redirect()->route('clients.index');
     }
 
     /**
@@ -87,6 +88,7 @@ class ClientController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->cR->deleteClient($id);
+        return redirect()->route('clients.index');
     }
 }

@@ -9,7 +9,7 @@ class Client extends Model
 
 //$user = User::factory()->make();
 
-
+    protected $guarded = [];
     use HasFactory;
 
     public function repairs() {

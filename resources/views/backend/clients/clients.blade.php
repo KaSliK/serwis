@@ -8,12 +8,12 @@
     <div class="">
         <table class="table table-hover align-middle table-responsive" id="myTable">
             <tr>
-                <th class="">L.p.</th>
-                <th class="name"  onclick="sortTable()">Imię</th>
-                <th class="">Nazwisko</th>
-                <th class="">Numer telefonu</th>
-                <th class="">Ulica</th>
-                <th class="">Miasto</th>
+                <th>L.p.</th>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Numer telefonu</th>
+                <th>Ulica</th>
+                <th>Miasto</th>
                 <th class="float-right">
                     <a href="{{route('clients.create')}}" class="btn btn-sm btn-info"><i
                             class="fa fa-plus mg-r-10"></i> Dodaj</a>

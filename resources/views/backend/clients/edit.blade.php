@@ -3,47 +3,68 @@
 @section('content')
 
 
-    <p style="font-size: 3rem;" class="text-center font-weight-bolder">{{__('messages.edit')}} Example</p>
+    <p style="font-size: 3rem;" class="text-center font-weight-bolder">{{__('messages.edit')}} <b>{{$client->name}} {{$client->surname}}</b></p>
     <div class="separate-line"></div>
     <form enctype="multipart/form-data" method="POST"
-          action="{{ route('examples.update', ['example' => $example->id]) }}">
+          action="{{ route('clients.update', ['client' => $client->id]) }}">
         @csrf
         @method('PUT')
         <div class="row justify-content-center">
-            <div class="col-6">
-                <div class="md-form">
-                    <i class="fas fa-font prefix"></i>
-                    <input type="text" name="title" id="title" value="{{$example->title}}" class="form-control">
-                    <label for="title">{{__('messages.title')}}</label>
-                </div>
-                <div class="md-form">
-                    <i class="fas fa-bold prefix"></i>
-                    <input type="text" name="subtitle" id="subtitle" value="{{$example->subtitle}}"
-                           class="form-control">
-                    <label for="subtitle">{{__('messages.subtitle')}}</label>
-                </div>
-                <div class="md-form">
-                    <textarea name="description" id="description" class="form-control md-textarea" length="120"
-                              rows="3">{{$example->description}}</textarea>
-                    <label for="description">{{__('messages.short description')}}</label>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-6 md-form">
+                        <i class="fas fa-font prefix"></i>
+                        <input type="text" name="name" id="name" value="{{$client->name}}" class="form-control">
+                        <label for="name">Imię</label>
+                    </div>
+                    <div class="col-6 md-form">
+                        <i class="fas fa-bold prefix"></i>
+                        <input type="text" name="surname" id="surname" value="{{$client->surname}}"
+                               class="form-control">
+                        <label for="surname">Nazwisko</label>
+                    </div>
                 </div>
             </div>
-            {{--<div class="col-6 align-self-center">
-                <div class="file-field">
-                    <div class="btn blue-gradient btn-sm float-left">
-                        <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Dodaj plik</span>
-                        <input id="photo" type="file" name="photo">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-6 md-form">
+
+                        <input type="text" name="phone_number" id="phone_number" value="{{$client->phone_number}}" class="form-control">
+                        <label for="phone_number">Numer telefonu</label>
                     </div>
-                    <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                    <div class="col-6 md-form">
+
+                        <input type="text" name="email" id="email" value="{{$client->email}}"
+                               class="form-control">
+                        <label for="email">e-mail</label>
                     </div>
                 </div>
-                <div class="md-form">
-                    <i class="fas fa-align-justify prefix"></i>
-                    <input type="text" name="alt" id="alt" value="{{$example->alt}}"class="form-control">
-                    <label for="alt">Nazwa zdjęcia</label>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-4 md-form">
+
+                        <input type="text" name="street" id="street" value="{{$client->street}}" class="form-control">
+                        <label for="street">Ulica</label>
+                    </div>
+                    <div class="col-4 md-form">
+
+                        <input type="text" name="city" id="city" value="{{$client->city}}"
+                               class="form-control">
+                        <label for="city">Miasto</label>
+                    </div>
+                    <div class="col-4 md-form">
+
+                        <input type="text" name="post_code" id="post_code" value="{{$client->post_code}}"
+                               class="form-control">
+                        <label for="post_code">Kod pocztowy</label>
+                    </div>
                 </div>
-            </div>--}}
+            </div>
+
+
+
+
         </div>
         <div class="row justify-content-center">
             <div class="col-6">

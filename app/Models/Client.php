@@ -12,4 +12,8 @@ class Client extends Model
 
     use HasFactory;
 
+    public function repairs() {
+        return $this->hasMany('App\Models\Repair');
+    }
+
 }

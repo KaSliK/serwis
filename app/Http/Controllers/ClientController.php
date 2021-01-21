@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Serwis\Repositories\BackendRepository;
+use App\Serwis\Repositories\ClientsRepository;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
+    public function __construct(BackendRepository $backendRepository, ClientsRepository $clientsRepository)
+    {
+        $this->bR = $backendRepository;
+        $this->cR = $clientsRepository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +21,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.clients.clients', ['clients'=>$this->cR->getClients()]);
     }
 
     /**

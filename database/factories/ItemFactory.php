@@ -23,11 +23,11 @@ class ItemFactory extends Factory
     public function definition()
     {
         return [
-            'client_id' => $this->faker->numberBetween(1,10),
+//            'client_id' => $this->faker->numberBetween(1,10),
             'brand' => $this->faker->company,
             'model' => $this->faker->companySuffix,
-            'description' => $this->faker->text,
-            'price' => 50,
+//            'description' => $this->faker->text,
+//            'price' => 50,
         ];
     }
 }

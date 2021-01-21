@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Serwis\Repositories\BackendRepository;
 use Illuminate\Http\Request;
 
 class RepairController extends Controller
 {
+    public function __construct(BackendRepository $backendRepository)
+    {
+        $this->bR = $backendRepository;
+    }
+
     /**
      * Display a listing of the resource.
      *

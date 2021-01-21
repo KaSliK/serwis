@@ -94,7 +94,7 @@
                             class="fab fa-firstdraft"></i>
                         Example</a>
                 </li>
-                <li><a class="collapsible-header waves-effect" href="{{route('examples.index')}}"><i
+                <li><a class="collapsible-header waves-effect" href="{{route('clients.index')}}"><i
                             class="fab fa-firstdraft"></i>
                         Clients</a>
                 </li>

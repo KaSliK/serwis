@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Panel\Traits;
+namespace App\Serwis\Traits;
 
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;

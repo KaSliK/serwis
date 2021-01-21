@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Panel\Repositories\BackendRepository;
+use App\Serwis\Repositories\BackendRepository;
 use Illuminate\Http\Request;
 
 class BackendController extends Controller

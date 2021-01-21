@@ -29,6 +29,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PHPCodeSnifferBlackList">
+    <option name="filePaths">
+      <list>
+        <option value="$PROJECT_DIR$/database/seeders/StatusTableSeeder.php" />
+      </list>
+    </option>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
@@ -220,7 +227,8 @@
       <workItem from="1601278468636" duration="5197000" />
       <workItem from="1610902264399" duration="700000" />
       <workItem from="1610984074085" duration="6924000" />
-      <workItem from="1611077213462" duration="255000" />
+      <workItem from="1611077213462" duration="1868000" />
+      <workItem from="1611247686063" duration="990000" />
     </task>
     <servers />
   </component>

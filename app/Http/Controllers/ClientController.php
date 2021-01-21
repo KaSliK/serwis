@@ -2,23 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Serwis\Repositories\BackendRepository;
 use Illuminate\Http\Request;
 
-
-class ExampleController extends Controller
+class ClientController extends Controller
 {
-    /*public function __construct(BackendGateway $backendGateway, BackendRepositoryInterface $backendRepository)
-    {
-        $this->middleware('CheckAdmin');
-        $this->bG = $backendGateway;
-        $this->bR = $backendRepository;
-    }*/
-    public function __construct(BackendRepository $backendRepository)
-    {
-        $this->bR = $backendRepository;
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +13,7 @@ class ExampleController extends Controller
      */
     public function index()
     {
-        return view('backend.examples.example', ['examples'=>$this->bR->getExamples()]);
+        //
     }
 
     /**
@@ -36,8 +23,7 @@ class ExampleController extends Controller
      */
     public function create()
     {
-        return view('backend.examples.create');
-//        return redirect()->route('backend.examples.create');
+        //
     }
 
     /**
@@ -48,8 +34,7 @@ class ExampleController extends Controller
      */
     public function store(Request $request)
     {
-        $this->bR->createExample($request);
-        return redirect()->route('examples.index');
+        //
     }
 
     /**
@@ -71,7 +56,7 @@ class ExampleController extends Controller
      */
     public function edit($id)
     {
-        return view('backend.examples.edit', ['example'=>$this->bR->getExample($id)]);
+        //
     }
 
     /**
@@ -83,9 +68,7 @@ class ExampleController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-        $this->bR->updateExample($request, $id);
-        return redirect()->route('examples.index');
+        //
     }
 
     /**
@@ -96,7 +79,6 @@ class ExampleController extends Controller
      */
     public function destroy($id)
     {
-        $this->bR->deleteExample($id);
-        return redirect()->route('examples.index');
+        //
     }
 }

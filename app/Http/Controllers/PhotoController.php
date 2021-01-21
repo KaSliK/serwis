@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\PhotoRequest;
-use App\Panel\Repositories\BackendRepository;
+use App\Serwis\Repositories\BackendRepository;
 use Illuminate\Http\Request;
 
 class PhotoController extends Controller

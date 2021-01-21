@@ -94,6 +94,19 @@
                             class="fab fa-firstdraft"></i>
                         Example</a>
                 </li>
+                <li><a class="collapsible-header waves-effect" href="{{route('examples.index')}}"><i
+                            class="fab fa-firstdraft"></i>
+                        Clients</a>
+                </li>
+                <li><a class="collapsible-header waves-effect" href="{{route('examples.index')}}"><i
+                            class="fab fa-firstdraft"></i>
+                        Repairs</a>
+                </li>
+                <li><a class="collapsible-header waves-effect" href="{{route('examples.index')}}"><i
+                            class="fab fa-firstdraft"></i>
+                        Items</a>
+                </li>
+
                 <li><a class="collapsible-header waves-effect" href="{{route('mails')}}"><i class="fas fa-envelope"></i>
                         Mails</a>
                 </li>

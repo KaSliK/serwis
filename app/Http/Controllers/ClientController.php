@@ -31,7 +31,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.clients.create');
     }
 
     /**
@@ -42,7 +42,8 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->cR->createClient($request);
+        return redirect()->route('clients.index');
     }
 
     /**

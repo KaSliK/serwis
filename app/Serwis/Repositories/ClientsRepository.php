@@ -31,6 +31,11 @@ class ClientsRepository {
         return Client::where('id', $id)->delete();
     }
 
+    public function createClient($request) {
+        Session::flash('success', "Success!");
+        return Client::create($request->except(['_token', '_method']));
+    }
+
 
 
 

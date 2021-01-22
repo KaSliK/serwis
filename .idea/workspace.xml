@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/StatusTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/StatusTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Repair.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repair.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Serwis/Repositories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -181,8 +181,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\serwis_app\app\Serwis\Repositories" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend" />
+      <recent name="C:\xampp\htdocs\serwis_app\app\Serwis\Repositories" />
       <recent name="C:\xampp\htdocs\panel\resources\lang\en" />
       <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
       <recent name="C:\xampp\htdocs\panel\app\Panel\Interfaces" />
@@ -233,7 +233,7 @@
       <workItem from="1610984074085" duration="6924000" />
       <workItem from="1611077213462" duration="1868000" />
       <workItem from="1611247686063" duration="9990000" />
-      <workItem from="1611325701940" duration="6885000" />
+      <workItem from="1611325701940" duration="8200000" />
     </task>
     <servers />
   </component>

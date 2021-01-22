@@ -13,8 +13,12 @@ class Repair extends Model
         return $this->belongsTo('App\Models\Client');
     }
 
+    public function item() {
+        return $this->belongsTo('App\Models\Item');
+    }
+
     public function status() {
-        return $this->hasOne('App\Models\Status');
+        return $this->belongsTo('App\Models\Status');
     }
 
     public function photos() {

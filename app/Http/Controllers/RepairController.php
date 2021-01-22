@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Serwis\Repositories\BackendRepository;
+use App\Serwis\Repositories\RepairRepository;
 use Illuminate\Http\Request;
 
 class RepairController extends Controller
 {
-    public function __construct(BackendRepository $backendRepository)
+    public function __construct(RepairRepository $repairRepository)
     {
-        $this->bR = $backendRepository;
+        $this->rR = $repairRepository;
     }
 
     /**
@@ -19,7 +19,7 @@ class RepairController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.repairs.repairs', ['repairs'=>$this->rR->getRepairs()]);
     }
 
     /**
@@ -29,7 +29,7 @@ class RepairController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.repairs.create');
     }
 
     /**
@@ -40,7 +40,8 @@ class RepairController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->rR->createRepair($request);
+        return redirect()->route('repairs.index');
     }
 
     /**
@@ -51,7 +52,7 @@ class RepairController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -62,7 +63,7 @@ class RepairController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('backend.repairs.edit', ['repair' => $this->rR->getRepair($id)]);
     }
 
     /**
@@ -74,7 +75,8 @@ class RepairController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->rR->updateRepair($request, $id);
+        return redirect()->route('repairs.index');
     }
 
     /**
@@ -85,6 +87,7 @@ class RepairController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->rR->deleteRepair($id);
+        return redirect()->route('repairs.index');
     }
 }

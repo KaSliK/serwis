@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Status extends Model
 {
     use HasFactory;
+    protected $table = 'status';
+
 
     public function repair() {
-        return $this->belongsToMany('App\Models\Repair', 'status_id');
+        return $this->hasMany('App\Models\Repair', 'status_id');
     }
 }

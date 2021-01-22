@@ -21,6 +21,8 @@ class CreateRepairsTable extends Migration
             $table->foreign('item_id')->references('id')->on('items');
             $table->bigInteger('status_id')->unsigned();
             $table->foreign('status_id')->references('id')->on('status');
+            $table->string('serial_number');
+            $table->date('picked_up')->nullable();
             $table->text('description');
             $table->integer('price');
             $table->timestamps();

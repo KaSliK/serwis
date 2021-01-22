@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Serwis/Repositories/ClientsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serwis/Repositories/ClientRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/clients/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/clients/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/StatusTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/StatusTableSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +233,7 @@
       <workItem from="1610984074085" duration="6924000" />
       <workItem from="1611077213462" duration="1868000" />
       <workItem from="1611247686063" duration="9990000" />
-      <workItem from="1611325701940" duration="5851000" />
+      <workItem from="1611325701940" duration="6885000" />
     </task>
     <servers />
   </component>

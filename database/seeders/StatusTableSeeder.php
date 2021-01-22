@@ -18,6 +18,7 @@ class StatusTableSeeder extends Seeder
         $items = [
             ['name' => "Przyjęto"],
             ['name' => "W realizacji"],
+            ['name' => "Czeka na kontakt"],
             ['name' => "Zrobione"],
             ['name' => "Zrobione/skontaktowano"],
             ['name' => "Wydano"],

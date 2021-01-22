@@ -5,8 +5,12 @@
     <p style="font-size: 3rem;" class="text-center font-weight-bolder">Klienci </p>
     <div class="separate-line"></div>
 
-    <div class="">
-        <table class="table table-hover align-middle table-responsive" id="myTable">
+    <div>
+        <a href="{{route('clients.create')}}" class="btn btn-sm btn-info"><i
+                class="fa fa-plus "></i> Dodaj</a>
+        <table id="dt" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+{{--        <table class="table table-hover align-middle table-responsive" id="myTable">--}}
+            <thead>
             <tr>
                 <th>L.p.</th>
                 <th>Imię</th>
@@ -14,12 +18,12 @@
                 <th>Numer telefonu</th>
                 <th>Ulica</th>
                 <th>Miasto</th>
-                <th class="float-right">
-                    <a href="{{route('clients.create')}}" class="btn btn-sm btn-info"><i
-                            class="fa fa-plus mg-r-10"></i> Dodaj</a>
-                </th>
+                <th></th>
             </tr>
+            </thead>
 
+
+            <tbody>
             @foreach($clients as $client)
                 <tr>
                     <td class="align-middle">{{$loop->index+1}}</td>
@@ -43,10 +47,18 @@
                     </td>
                 </tr>
             @endforeach
+            </tbody>
+
         </table>
         {{$clients->links()}}
     </div>
 
-    <script src="{{asset(('js/scripts/sort.js'))}}"></script>
+    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 
+
+
+
+@endsection
+@section('script')
+    <script src="{{asset(('js/scripts/sort.js'))}}"></script>
 @endsection

@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables-select.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables-select2.min.css')}}">
 
 </head>
 
@@ -134,10 +138,13 @@
 <div class="container mt-10 pt-10">
     @yield('content')
 </div>
-@yield('scripts')
+
 <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/addons/datatables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/addons/datatables2.min.js')}}"></script>
+
 <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 <script>
     $(document).ready(() => {
@@ -151,7 +158,7 @@
     });
 </script>
 <script src="https://kit.fontawesome.com/3c5516695a.js" crossorigin="anonymous"></script>
-
-
+<script src="{{asset(('js/scripts/sort.js'))}}"></script>
+@yield('scripts')
 </body>
 </html>

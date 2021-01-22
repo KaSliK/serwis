@@ -1,13 +1,14 @@
-const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
 
-const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-)(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-// do the work...
-document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-    const table = th.closest('table');
-Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-    .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-    .forEach(tr => table.appendChild(tr) );
-})));
+$(document).ready(function () {
+    $('#dt').DataTable( {
+        "language": {
+            "search" : "Szukaj",
+            "lengthMenu": "Pokaż _MENU_ rekordów na stronę",
+            "zeroRecords": "Nic nie znaleziono",
+            "info": "Strona _PAGE_ z _PAGES_",
+            "infoEmpty": "Żaden rekord nie jest dostępny",
+            "infoFiltered": "(Pokazuje _MAX_ ze wszystkich rekordów)"
+        }
+    });
+    $('.dataTables_length').addClass('bs-select');
+});

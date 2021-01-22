@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <p style="font-size: 3rem;" class="text-center font-weight-bolder">{{__('messages.create example')}}</p>
+    <p style="font-size: 3rem;" class="text-center font-weight-bolder">Stwórz klienta</p>
     <div class="separate-line"></div>
         <form enctype="multipart/form-data" method="POST" action="{{ route('clients.store') }}">
             <div class="row justify-content-center">

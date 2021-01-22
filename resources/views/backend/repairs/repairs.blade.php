@@ -9,12 +9,12 @@
         <a href="{{route('repairs.create')}}" class="btn btn-sm btn-info"><i
                 class="fa fa-plus "></i> Dodaj</a>
         <table id="dt" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-{{--        <table class="table table-hover align-middle table-responsive" id="myTable">--}}
             <thead>
             <tr>
                 <th>L.p.</th>
                 <th>Klient</th>
                 <th>Urządzenie</th>
+                <th>Status</th>
                 <th>S/N</th>
                 <th>Cena</th>
                 <th></th>
@@ -30,6 +30,7 @@
                     <td class="align-middle">{{$repair->item->model}}</td>
                     <td class="align-middle">{{$repair->status->name}}</td>
                     <td class="align-middle">{{$repair->serial_number }}</td>
+                    <td class="align-middle">{{$repair->price }}</td>
                     <td class="text-right">
                         <a href="{{route('repairs.edit', $repair->id)}}" class="btn-floating btn-md btn-green"><i
                                 class="far fa-edit"></i></a>

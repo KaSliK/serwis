@@ -53,10 +53,6 @@
         {{$clients->links()}}
     </div>
 
-    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-
-
-
 
 @endsection
 @section('script')

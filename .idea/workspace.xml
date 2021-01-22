@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Item.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Repair.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repair.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Status.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +234,7 @@
       <workItem from="1610984074085" duration="6924000" />
       <workItem from="1611077213462" duration="1868000" />
       <workItem from="1611247686063" duration="9990000" />
-      <workItem from="1611325701940" duration="8200000" />
+      <workItem from="1611325701940" duration="8965000" />
     </task>
     <servers />
   </component>

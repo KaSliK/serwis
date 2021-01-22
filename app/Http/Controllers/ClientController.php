@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Serwis\Repositories\BackendRepository;
-use App\Serwis\Repositories\ClientsRepository;
+use App\Serwis\Repositories\ClientRepository;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
-    public function __construct(BackendRepository $backendRepository, ClientsRepository $clientsRepository)
+    public function __construct(BackendRepository $backendRepository, ClientRepository $clientRepository)
     {
         $this->bR = $backendRepository;
-        $this->cR = $clientsRepository;
+        $this->cR = $clientRepository;
     }
 
     /**

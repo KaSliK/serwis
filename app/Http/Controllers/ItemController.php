@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Serwis\Repositories\ItemRepository;
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
 {
+    public function __construct(ItemRepository $itemRepository)
+    {
+        $this->iR = $itemRepository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +19,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.items.items', ['items' => $this->iR->getItems()]);
     }
 
     /**
@@ -23,7 +29,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.items.create');
     }
 
     /**
@@ -34,7 +40,8 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->iR->createItem($request);
+        return redirect()->route('clients.index');
     }
 
     /**
@@ -56,7 +63,7 @@ class ItemController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('backend.items.edit', ['item' => $this->iR->getItem($id)]);
     }
 
     /**
@@ -68,7 +75,8 @@ class ItemController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->iR->updateItem($request, $id);
+        return redirect()->route('items.index');
     }
 
     /**
@@ -79,6 +87,7 @@ class ItemController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->iR->deleteItem($id);
+        return redirect()->route('items.index');
     }
 }

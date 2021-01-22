@@ -11,7 +11,7 @@ use http\Env\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
-class ClientsRepository {
+class ClientRepository {
     use PhotoTrait;
 
     public function getClients() {

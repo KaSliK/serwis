@@ -7,8 +7,10 @@
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Serwis/Repositories/ClientsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serwis/Repositories/ClientsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/clients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/clients/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Serwis/Repositories/ClientsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serwis/Repositories/ClientRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/clients/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/clients/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,16 +182,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\panel\app\Panel" />
-      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\serwis_app\app\Serwis\Repositories" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend" />
       <recent name="C:\xampp\htdocs\panel\resources\lang\en" />
       <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
       <recent name="C:\xampp\htdocs\panel\app\Panel\Interfaces" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\panel\app\Panel" />
+      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,7 +235,7 @@
       <workItem from="1610984074085" duration="6924000" />
       <workItem from="1611077213462" duration="1868000" />
       <workItem from="1611247686063" duration="9990000" />
-      <workItem from="1611325701940" duration="3557000" />
+      <workItem from="1611325701940" duration="5851000" />
     </task>
     <servers />
   </component>

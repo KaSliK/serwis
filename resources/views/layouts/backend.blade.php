@@ -102,11 +102,11 @@
                             class="fab fa-firstdraft"></i>
                         Clients</a>
                 </li>
-                <li><a class="collapsible-header waves-effect" href="{{route('examples.index')}}"><i
+                <li><a class="collapsible-header waves-effect" href="{{route('repairs.index')}}"><i
                             class="fab fa-firstdraft"></i>
                         Repairs</a>
                 </li>
-                <li><a class="collapsible-header waves-effect" href="{{route('examples.index')}}"><i
+                <li><a class="collapsible-header waves-effect" href="{{route('items.index')}}"><i
                             class="fab fa-firstdraft"></i>
                         Items</a>
                 </li>

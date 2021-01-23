@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Repair extends Model
 {
+    protected $fillable = [
+        'serial_number',
+        'client_id',
+        'status_id',
+        'item_id',
+        'price',
+        'picked_up',
+        'description'
+    ];
     use HasFactory;
 
     public function client() {

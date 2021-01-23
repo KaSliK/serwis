@@ -23,7 +23,7 @@ class CreateRepairsTable extends Migration
             $table->foreign('status_id')->references('id')->on('status');
             $table->string('serial_number');
             $table->date('picked_up')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->integer('price');
             $table->timestamps();
         });

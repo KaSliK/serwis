@@ -142,8 +142,12 @@
 <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/addons/datatables.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/addons/datatables2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/modules/material-select/material-select.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/modules/material-select/material-select-view.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/modules/material-select/material-select-view-renderer.min.js')}}"></script>
 
 <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 <script>
@@ -158,7 +162,7 @@
     });
 </script>
 <script src="https://kit.fontawesome.com/3c5516695a.js" crossorigin="anonymous"></script>
-<script src="{{asset(('js/scripts/sort.js'))}}"></script>
+{{--<script src="{{asset(('js/scripts/sort.js'))}}"></script>--}}
 @yield('scripts')
 </body>
 </html>

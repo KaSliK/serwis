@@ -2,14 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Serwis\Repositories\ClientRepository;
+use App\Serwis\Repositories\ItemRepository;
 use App\Serwis\Repositories\RepairRepository;
 use Illuminate\Http\Request;
 
 class RepairController extends Controller
 {
-    public function __construct(RepairRepository $repairRepository)
+    public function __construct(RepairRepository $repairRepository, ClientRepository $clientRepository, ItemRepository $itemRepository)
     {
         $this->rR = $repairRepository;
+        $this->cR = $clientRepository;
+        $this->iR = $itemRepository;
     }
 
     /**
@@ -29,7 +33,7 @@ class RepairController extends Controller
      */
     public function create()
     {
-        return view('backend.repairs.create');
+        return view('backend.repairs.create', ['clients' => $this->cR->getClients(), 'items' => $this->iR->getItems()]);
     }
 
     /**
@@ -40,6 +44,7 @@ class RepairController extends Controller
      */
     public function store(Request $request)
     {
+//        dd($request->all());
         $this->rR->createRepair($request);
         return redirect()->route('repairs.index');
     }

@@ -3,7 +3,9 @@
 namespace App\Serwis\Repositories;
 
 use App\Models\Repair;
+
 use http\Env\Request;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
@@ -26,9 +28,17 @@ class RepairRepository {
         return Repair::where('id', $id)->delete();
     }
 
-    public function createClient($request) {
+    public function createRepair($request) {
         Session::flash('success', "Success!");
-        return Repair::create($request->except(['_token', '_method']));
+        return Repair::create([
+            'client_id' => $request->input('client_id'),
+            'item_id' => $request->input('item_id'),
+            'status_id' => $request->input('status_id'),
+            'serial_number' => $request->input('serial_number'),
+            'picked_up' => date('Y-m-d', strtotime($request->input('picked_up'))),
+            'price' => $request->input('price'),
+            'description' => $request->input('description')
+        ]);
     }
 
 

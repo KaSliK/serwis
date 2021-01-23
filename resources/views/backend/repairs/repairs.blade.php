@@ -8,7 +8,7 @@
     <div>
         <a href="{{route('repairs.create')}}" class="btn btn-sm btn-info"><i
                 class="fa fa-plus "></i> Dodaj</a>
-        <table id="dt" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+        <table id="dt" class="table table-striped table-bordered table-sm" >
             <thead>
             <tr>
                 <th>L.p.</th>
@@ -16,6 +16,7 @@
                 <th>Urządzenie</th>
                 <th>Status</th>
                 <th>S/N</th>
+                <th>Opis</th>
                 <th>Cena</th>
                 <th></th>
             </tr>
@@ -30,6 +31,7 @@
                     <td class="align-middle">{{$repair->item->model}}</td>
                     <td class="align-middle">{{$repair->status->name}}</td>
                     <td class="align-middle">{{$repair->serial_number }}</td>
+                    <td class="align-middle ">{{Str::limit($repair->description,25) }}</td>
                     <td class="align-middle">{{$repair->price }}</td>
                     <td class="text-right">
                         <a href="{{route('repairs.edit', $repair->id)}}" class="btn-floating btn-md btn-green"><i
@@ -56,6 +58,6 @@
 
 
 @endsection
-@section('script')
+@section('scripts')
     <script src="{{asset(('js/scripts/sort.js'))}}"></script>
 @endsection

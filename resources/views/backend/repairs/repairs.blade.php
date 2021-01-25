@@ -25,7 +25,7 @@
 
             <tbody>
             @foreach($repairs as $repair)
-                <tr>
+                <tr id="{{$repair->id}}">
                     <td class="align-middle">{{$repair->id}}</td>
                     <td class="align-middle">{{$repair->client->name}} {{$repair->client->surname}}</td>
                     <td class="align-middle">{{$repair->item->model}}</td>
@@ -34,12 +34,13 @@
                     <td class="align-middle ">{{Str::limit($repair->description,25) }}</td>
                     <td class="align-middle">{{$repair->price }}</td>
                     <td class="text-right">
+                        <input type="button" value="X" class="remove" name="remove" id="{{$repair->id}}">
                         <a href="{{route('repairs.edit', $repair->id)}}" class="btn-floating btn-md btn-green"><i
                                 class="far fa-edit"></i></a>
 
                         <form style="display: inline;" method="POST"
                               action="{{ route('repairs.destroy', $repair->id) }}">
-                            <button onclick="return confirm('Jesteś pewny?');" class="btn-floating btn-md btn-dark"
+                            <button id="destr" onclick="return confirm('Jesteś pewny?');" class="btn-floating btn-md btn-dark"
                                     type="submit"><i class="fas fa-trash-alt"></i></button>
                             {{ method_field('DELETE') }}
                             {{ csrf_field() }}
@@ -60,4 +61,28 @@
 @endsection
 @section('scripts')
     <script src="{{asset(('js/scripts/sort.js'))}}"></script>
+
+
+   <script>
+      $(document).ready(function(){
+         $(".remove").click(function(){
+            userID = $(this).attr('id');
+
+            $.ajax({
+               url: '/repairs/' + userID,
+               type: 'DELETE',
+               cache: false,
+               data: {
+                  "_token": "{{ csrf_token() }}",
+               },
+
+               success:function(data){
+                     $("#"+userID).remove()
+               }
+            });
+
+         });
+      });
+   </script>
+
 @endsection

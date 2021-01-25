@@ -92,7 +92,7 @@ class RepairController extends Controller
      */
     public function destroy($id)
     {
-        $this->rR->deleteRepair($id);
-        return $this->index();
+        return $this->rR->deleteRepair($id);
+
     }
 }

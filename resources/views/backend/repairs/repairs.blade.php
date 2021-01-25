@@ -11,7 +11,7 @@
         <table id="dt" class="table table-striped table-bordered table-sm" >
             <thead>
             <tr>
-                <th>L.p.</th>
+                <th>Rew.</th>
                 <th>Klient</th>
                 <th>Urządzenie</th>
                 <th>Status</th>
@@ -26,7 +26,7 @@
             <tbody>
             @foreach($repairs as $repair)
                 <tr>
-                    <td class="align-middle">{{$loop->index+1}}</td>
+                    <td class="align-middle">{{$repair->id}}</td>
                     <td class="align-middle">{{$repair->client->name}} {{$repair->client->surname}}</td>
                     <td class="align-middle">{{$repair->item->model}}</td>
                     <td class="align-middle">{{$repair->status->name}}</td>

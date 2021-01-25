@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Repair extends Model
 {
+    protected $guarded = [];
     protected $fillable = [
         'serial_number',
         'client_id',

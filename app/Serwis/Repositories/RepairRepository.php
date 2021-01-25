@@ -4,6 +4,7 @@ namespace App\Serwis\Repositories;
 
 use App\Models\Repair;
 
+use App\Models\Status;
 use http\Env\Request;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Session;
@@ -21,7 +22,15 @@ class RepairRepository {
     }
 
     public function updateRepair($request, $id) {
-        return Repair::where('id', $id)->update($request->except(['_token', '_method']));
+        return Repair::find($id)->update([
+            'client_id' => $request->input('client_id'),
+            'item_id' => $request->input('item_id'),
+            'status_id' => $request->input('status_id'),
+            'serial_number' => $request->input('serial_number'),
+            'picked_up' => date('Y-m-d', strtotime($request->input('picked_up'))),
+            'price' => $request->input('price'),
+            'description' => $request->input('description')
+        ]);
     }
 
     public function deleteRepair($id) {
@@ -39,6 +48,10 @@ class RepairRepository {
             'price' => $request->input('price'),
             'description' => $request->input('description')
         ]);
+    }
+
+    public function getStatuses() {
+        return Status::all();
     }
 
 

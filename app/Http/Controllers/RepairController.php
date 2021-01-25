@@ -68,7 +68,7 @@ class RepairController extends Controller
      */
     public function edit($id)
     {
-        return view('backend.repairs.edit', ['repair' => $this->rR->getRepair($id)]);
+        return view('backend.repairs.edit', ['repair' => $this->rR->getRepair($id),'clients' => $this->cR->getClients(), 'items' => $this->iR->getItems(), 'statuses' => $this->rR->getStatuses()]);
     }
 
     /**
@@ -93,6 +93,6 @@ class RepairController extends Controller
     public function destroy($id)
     {
         $this->rR->deleteRepair($id);
-        return redirect()->route('repairs.index');
+        return $this->index();
     }
 }

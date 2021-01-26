@@ -34,18 +34,11 @@
                     <td class="align-middle ">{{Str::limit($repair->description,25) }}</td>
                     <td class="align-middle">{{$repair->price }}</td>
                     <td class="text-right">
-                        <input type="button" value="X" class="remove" name="remove" id="{{$repair->id}}">
+
                         <a href="{{route('repairs.edit', $repair->id)}}" class="btn-floating btn-md btn-green"><i
                                 class="far fa-edit"></i></a>
-
-                        <form style="display: inline;" method="POST"
-                              action="{{ route('repairs.destroy', $repair->id) }}">
-                            <button id="destr" onclick="return confirm('Jesteś pewny?');" class="btn-floating btn-md btn-dark"
-                                    type="submit"><i class="fas fa-trash-alt"></i></button>
-                            {{ method_field('DELETE') }}
-                            {{ csrf_field() }}
-                        </form>
-
+                        <button id="{{$repair->id}}"  class="btn-floating btn-md btn-dark remove"
+                                type="submit"><i class="fas fa-trash-alt"></i></button>
                     </td>
                 </tr>
             @endforeach
@@ -75,8 +68,8 @@
                data: {
                   "_token": "{{ csrf_token() }}",
                },
-
                success:function(data){
+                  if(confirm('Jesteś pewny?'))
                      $("#"+userID).remove()
                }
             });

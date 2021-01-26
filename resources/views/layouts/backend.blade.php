@@ -54,12 +54,15 @@
                              aria-labelledby="navbarDropdownMenuLink-333">
                             <a class="dropdown-item" href="/user/profile">Profile</a>
                             <a class="dropdown-item" href="/user/api-tokens">Api Tokens</a>
+                            <a class="dropdown-item" href="">{{Auth::user()->tokens()->delete()}}
+                            </a>
+
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                 <i class="fas fa-sign-out-alt"></i>Logout
                             </a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                            <form id="logout-form" action="{{ route('logout1') }}" method="GET"
                                   style="display: none;"></form>
                             @csrf
                         </div>

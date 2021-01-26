@@ -1,4 +1,10 @@
 {
     "Do not play": "Nie grajzweirzu",
-    "No vacancies": "Nie ma wolnych miejsc"
+    "No vacancies": "Nie ma wolnych miejsc",
+    "Password": "Hasło",
+    "Name": "Imię",
+    "Confirm Password": "Potwierdź hasło",
+    "Already registered?": "Zarejestrowany?",
+    "Forgot Password?": "Zapomniałeś hasła?"
+
 }

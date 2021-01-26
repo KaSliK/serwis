@@ -17,5 +17,4 @@ return [
     'subpages section welcome' => 'Witaj na stronie poświęconej podstronom',
     'gallery' => 'Galeria zdjęć',
 
-
 ];

@@ -21,11 +21,9 @@
                 <th></th>
             </tr>
             </thead>
-
-
             <tbody>
             @foreach($repairs as $repair)
-                <tr id="{{$repair->id}}">
+                <tr id="row-{{$repair->id}}">
                     <td class="align-middle">{{$repair->id}}</td>
                     <td class="align-middle">{{$repair->client->name}} {{$repair->client->surname}}</td>
                     <td class="align-middle">{{$repair->item->model}}</td>
@@ -46,11 +44,6 @@
 
         </table>
     </div>
-
-
-
-
-
 @endsection
 @section('scripts')
     <script src="{{asset(('js/scripts/sort.js'))}}"></script>
@@ -59,7 +52,7 @@
    <script>
       $(document).ready(function(){
          $(".remove").click(function(){
-            userID = $(this).attr('id');
+            rowID = $(this).attr('id');
 
             $.ajax({
                url: '/repairs/' + userID,
@@ -70,7 +63,7 @@
                },
                success:function(data){
                   if(confirm('Jesteś pewny?'))
-                     $("#"+userID).remove()
+                     $("#row-"+rowID).remove()
                }
             });
 

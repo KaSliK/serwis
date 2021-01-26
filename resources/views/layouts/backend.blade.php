@@ -92,40 +92,32 @@
 
                 <li><a class="collapsible-header waves-effect" href="{{route('dashboard')}}"><i
                             class="fas fa-columns"></i>
-                        Dashboard</a>
+                        Panel</a>
                 </li>
                 <li><a class="collapsible-header waves-effect" href="{{route('examples.index')}}"><i
                             class="fab fa-firstdraft"></i>
                         Example</a>
                 </li>
-                <li><a class="collapsible-header waves-effect" href="{{route('clients.index')}}"><i
-                            class="fab fa-firstdraft"></i>
-                        Clients</a>
+                <li><a class="collapsible-header waves-effect" href="{{route('clients.index')}}">
+                        <i class="fas fa-users"></i>
+                        Klienci</a>
                 </li>
                 <li><a class="collapsible-header waves-effect" href="{{route('repairs.index')}}"><i
-                            class="fab fa-firstdraft"></i>
-                        Repairs</a>
+                        <i class="fas fa-tools"></i>
+                        Zgłoszenia</a>
                 </li>
                 <li><a class="collapsible-header waves-effect" href="{{route('items.index')}}"><i
-                            class="fab fa-firstdraft"></i>
-                        Items</a>
+                        <i class="fas fa-laptop"></i>
+                        Urządzenia</a>
                 </li>
-
-                <li><a class="collapsible-header waves-effect" href="{{route('mails')}}"><i class="fas fa-envelope"></i>
-                        Mails</a>
                 </li>
                 <li><a class="collapsible-header waves-effect" href="{{route('media')}}"><i
                             class="fas fa-photo-video"></i>
                         Media</a>
                 </li>
-                <li><a class="collapsible-header waves-effect" href="{{route('subpages')}}"><i
-                            class="fas fa-file-alt"></i>
-                        Subpages</a>
-                </li>
                 <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-right"></i>Minimize
                         menu</a>
                 </li>
-                <!--/. Side navigation links -->
             </ul>
         </li>
     </ul>

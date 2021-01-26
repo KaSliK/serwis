@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="{{asset('css/lcligtboxStyles.css')}}"/>
 @endsection
 @section('scripts')
-    <script src="{{asset('lib/jquery.js')}}" type="text/javascript"></script>
+{{--    <script src="{{asset('lib/jquery.js')}}" type="text/javascript"></script>--}}
 
     <script src="{{asset('js/lc_lightbox.lite.js')}}" type="text/javascript"></script>
     <!-- ASSETS -->

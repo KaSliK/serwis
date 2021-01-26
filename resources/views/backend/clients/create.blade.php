@@ -2,6 +2,16 @@
 
 @section('content')
 
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>{{$error}}</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        @endforeach
+    @endif
     <p style="font-size: 3rem;" class="text-center font-weight-bolder">Stwórz klienta</p>
     <div class="separate-line"></div>
         <form enctype="multipart/form-data" method="POST" action="{{ route('clients.store') }}">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ClientRequest;
 use App\Serwis\Repositories\BackendRepository;
 use App\Serwis\Repositories\ClientRepository;
 use Illuminate\Http\Request;
@@ -40,7 +41,7 @@ class ClientController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ClientRequest $request)
     {
         $this->cR->createClient($request);
         return redirect()->route('clients.index');

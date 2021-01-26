@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Kamil Kaślikowski">
     <title>Admin panel</title>
 
     @yield('imports')
-    <link rel="icon" href="{{asset('img/mdb-favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">

@@ -76,7 +76,7 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ClientRequest $request, $id)
     {
         $this->cR->updateClient($request, $id);
         return redirect()->route('clients.index');

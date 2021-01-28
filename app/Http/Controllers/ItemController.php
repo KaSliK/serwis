@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ItemRequest;
 use App\Serwis\Repositories\ItemRepository;
 use Illuminate\Http\Request;
 
@@ -38,7 +39,7 @@ class ItemController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ItemRequest $request)
     {
         $this->iR->createItem($request);
         return redirect()->route('clients.index');
@@ -73,7 +74,7 @@ class ItemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ItemRequest $request, $id)
     {
         $this->iR->updateItem($request, $id);
         return redirect()->route('items.index');

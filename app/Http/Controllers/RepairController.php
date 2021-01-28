@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RepairRequest;
 use App\Serwis\Repositories\ClientRepository;
 use App\Serwis\Repositories\ItemRepository;
 use App\Serwis\Repositories\RepairRepository;
@@ -42,7 +43,7 @@ class RepairController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RepairRequest $request)
     {
 //        dd($request->all());
         $this->rR->createRepair($request);
@@ -78,7 +79,7 @@ class RepairController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(RepairRequest $request, $id)
     {
         $this->rR->updateRepair($request, $id);
         return redirect()->route('repairs.index');

@@ -1,6 +1,7 @@
 @extends('layouts.backend')
 
 @section('content')
+    @include('backend.errors')
 
     <p style="font-size: 3rem;" class="text-center font-weight-bolder">Stwórz urządzenie</p>
     <div class="separate-line"></div>

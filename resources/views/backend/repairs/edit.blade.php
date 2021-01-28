@@ -1,6 +1,7 @@
 @extends('layouts.backend')
 
 @section('content')
+    @include('backend.errors')
 
 
     <p style="font-size: 3rem;" class="text-center font-weight-bolder">{{__('messages.edit')}} <b> zgłoszenie nr {{$repair->id}}</b></p>

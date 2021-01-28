@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+    @include('backend.errors')
     <p style="font-size: 3rem;" class="text-center font-weight-bolder">{{__('messages.edit')}} <b>{{$item->model}}</b></p>
     <div class="separate-line"></div>
     <form enctype="multipart/form-data" method="POST"

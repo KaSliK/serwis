@@ -50,9 +50,7 @@
 
         <div class="row justify-content-center">
             <div class="col-6">
-                <button class="btn blue-gradient float-right" type="submit">{{__('messages.create')}}</button>
-                <a class="btn morpheus-den-gradient white-text float-right" href="{{route('clients.index')}}">{{__('messages.cancel')}}</a>
-
+                <button class="btn blue-gradient float-right" type="submit">Aktualizuj</button>
                 {{ csrf_field() }}
             </div>
 

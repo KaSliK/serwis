@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Serwis\Gateways\BackendGateway;
 use App\Serwis\Repositories\ContactDetailsRepository;
 use Illuminate\Http\Request;
 
 class ContactDetailsController extends Controller
 {
-    public function __construct(ContactDetailsRepository $contactDetailsRepository)
+    public function __construct(ContactDetailsRepository $contactDetailsRepository, BackendGateway $backendGateway)
     {
 
+        $this->bG= $backendGateway;
         $this->cR = $contactDetailsRepository;
     }
     /**
@@ -40,7 +42,7 @@ class ContactDetailsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->cR->createDetails($request);
+        $this->bG->createOrUpdateDetails($request);
         return redirect()->route('contact_details.index');
     }
 

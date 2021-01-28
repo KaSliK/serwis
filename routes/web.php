@@ -11,12 +11,10 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*//*
-Route::get('/', function () {
-    return view('backend.dashboard');
-});*/
+*/
 
 Route::group(['middleware'=>'auth:sanctum'], function(){
+
     Route::get('/', 'BackendController@index')->name('dashboard');
     Route::get('/dashboard', 'BackendController@index');
     Route::get('/example', 'BackendController@example')->name('example');
@@ -37,7 +35,5 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
 });
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
-    return view('backend.dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/', 'BackendController@index')->name('dashboard');
 

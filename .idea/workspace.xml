@@ -7,7 +7,7 @@
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_28_085510_create_contact_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_28_085510_create_contact_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactDetailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactDetailsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -238,7 +238,7 @@
       <workItem from="1611398313915" duration="10451000" />
       <workItem from="1611584590625" duration="7824000" />
       <workItem from="1611674784298" duration="13469000" />
-      <workItem from="1611856953088" duration="4837000" />
+      <workItem from="1611856953088" duration="6466000" />
     </task>
     <servers />
   </component>

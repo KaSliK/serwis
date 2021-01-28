@@ -12,7 +12,7 @@ class BackendController extends Controller
         $this->bR = $backendRepository;
     }
     public function index() {
-        return view('backend.dashboard');
+        return view ('backend.dashboard', ['details' => $this->cR->getDetails()]);
     }
     public function example() {
         return view('backend.examples.example');

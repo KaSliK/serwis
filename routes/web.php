@@ -28,6 +28,7 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
     Route::resource('items', 'ItemController');
     Route::resource('repairs', 'RepairController');
     Route::resource('photos', 'PhotoController');
+    Route::resource('contact_details', 'ContactDetailsController');
     Route::get('/example/{id}/gallery', 'BackendController@examplePhotos')->name('examplePhotos');
 
 

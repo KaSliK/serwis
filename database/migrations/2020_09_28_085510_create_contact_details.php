@@ -20,12 +20,8 @@ class CreateContactDetails extends Migration
             $table->string('post_code');
             $table->string('city');
             $table->string('address');
-            $table->string('email1');
-            $table->string('email2');
-            $table->string('phone1');
-            $table->string('phone2');
-            $table->string('phone3');
-            $table->string('phone4');
+            $table->string('email');
+            $table->string('phone_number');
             $table->timestamps();
         });
     }

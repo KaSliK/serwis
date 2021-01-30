@@ -7,7 +7,7 @@
     <form enctype="multipart/form-data" method="POST" action="{{ route('contact_details.store') }}">
         <div class="form-row">
             <div class="col-6 md-form md-bg input-with-pre-icon">
-                <i class="fas fa-user input-prefix"></i>
+                <i class="fas fa-building input-prefix"></i>
                 <input type="text" id="company_name" name="company_name" value="{{$details ? $details->company_name  : ''}}" class="form-control">
                 <label for="company_name">Nazwa Firmy</label>
             </div>
@@ -19,29 +19,29 @@
         </div>
         <div class="form-row">
             <div class="col-4 col-md-3 md-form md-bg input-with-pre-icon">
-                <i class="fas fa-user input-prefix"></i>
+                <i class="fas fa-mail-bulk input-prefix"></i>
                 <input type="text" name="post_code" id="post_code" value="{{$details ? $details->post_code  : ''}}" class="form-control">
                 <label for="post_code">Kod pocztowy</label>
             </div>
             <div class="col-8 col-md-4 md-form md-bg input-with-pre-icon">
-                <i class="fas fa-user input-prefix"></i>
+                <i class="fas fa-city input-prefix"></i>
                 <input type="text" name="city" id="city" value="{{$details ? $details->city  : ''}}" class="form-control">
                 <label for="city">Miasto</label>
             </div>
             <div class="col-12 col-md-5 md-form md-bg input-with-pre-icon">
-                <i class="fas fa-user input-prefix"></i>
+                <i class="fas fa-address-book input-prefix"></i>
                 <input type="text" name="address" id="address" value="{{$details ? $details->address  : ''}}" class="form-control">
                 <label for="address">Adres</label>
             </div>
         </div>
         <div class="form-row">
             <div class="col-6 md-form md-bg input-with-pre-icon">
-                <i class="fas fa-user input-prefix"></i>
+                <i class="fas fa-phone input-prefix"></i>
                 <input type="text" name="phone_number" id="phone_number" value="{{$details ? $details->phone_number  : ''}}" class="form-control">
                 <label for="phone_number">Numer telefonu</label>
             </div>
             <div class="col-6 md-form md-bg input-with-pre-icon">
-                <i class="fas fa-user input-prefix"></i>
+                <i class="fas fa-envelope-open-text input-prefix"></i>
                 <input type="text" name="email" id="email" value="{{$details ? $details->email  : ''}}" class="form-control">
                 <label for="email">Email</label>
             </div>

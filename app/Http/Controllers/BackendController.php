@@ -42,11 +42,12 @@ class BackendController extends Controller
     }
 
     public function createUser(Request $request) {
-        return User::create([
+        User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'password' => bcrypt($request->input('password')),
         ]);
+        return redirect()->back();
     }
 
 }

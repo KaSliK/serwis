@@ -110,6 +110,7 @@
        statusId.onchange = handleIt;
        function handleIt() {
           statusId.value !== '6' ? pickedUp.hidden = true : pickedUp.hidden = false;
+          pickedUp.hidden === false ? pickedUp.value = 0 :'';
        }
     </script>
 

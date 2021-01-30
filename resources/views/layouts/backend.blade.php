@@ -57,7 +57,7 @@
 
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                <i class="fas fa-sign-out-alt"></i>Logout
+                                <i class="fas fa-sign-out-alt"></i>Wyloguj
                             </a>
 
                             <form id="logout-form" action="{{ route('logout1') }}" method="GET"
@@ -118,8 +118,8 @@
                 </li>
                 @if(Auth::user()->hasRole->name === 'admin')
                 <li><a class="collapsible-header waves-effect" href="{{route('users.index')}}">
-                        <i class="fas fa-users"></i>
-                        Klienci</a>
+                        <i class="fas fa-user-tie"></i>
+                        Pracownicy</a>
                 </li>
                 @endif
                 <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-right"></i>Minimize

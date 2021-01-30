@@ -25,7 +25,7 @@
             @foreach($repairs as $repair)
                 <tr id="row-{{$repair->id}}">
                     <td class="align-middle">{{$repair->id}}</td>
-                    <td class="align-middle">{{$repair->client->name}} {{$repair->client->surname}}</td>
+                    <td class="align-middle">{{$repair->client->getFullName()}} </td>
                     <td class="align-middle">{{$repair->item->model}}</td>
                     <td class="align-middle">{{$repair->status->name}}</td>
                     <td class="align-middle">{{$repair->serial_number }}</td>

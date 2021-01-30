@@ -21,15 +21,16 @@ class UsersTableSeeder extends Seeder
 
 
         $items = [
-            ['name' => 'admin', 'email' => 'admins@example.com', 'password' => bcrypt('admin')],
-            ['name' => 'user', 'email' => 'user@example.com', 'password' => bcrypt('user')],
+            ['name' => 'admin', 'email' => 'admins@example.com', 'password' => bcrypt('admin'), 'role' => 1],
+            ['name' => 'user', 'email' => 'user@example.com', 'password' => bcrypt('user'), 'role' =>2],
         ];
 
         foreach ($items as $item) {
             DB::table('users')->insert([
                 'name'=> $item['name'],
                 'email' => $item['email'],
-                'password' => $item['password']
+                'password' => $item['password'],
+                'role' => $item['role'],
 
             ]);
         }

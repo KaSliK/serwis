@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/repairs/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/repairs/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/scripts/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/scripts/tableSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/clients/clients.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/clients/clients.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/items/items.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/items/items.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/repairs/repairs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/repairs/repairs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Serwis/Repositories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -180,16 +185,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\panel\app\Panel" />
-      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serwis_app\resources\js" />
       <recent name="C:\xampp\htdocs\serwis_app\app\Serwis\Repositories" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend" />
       <recent name="C:\xampp\htdocs\panel\resources\lang\en" />
       <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
-      <recent name="C:\xampp\htdocs\panel\app\Panel\Interfaces" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\panel\app\Panel" />
+      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -238,7 +243,7 @@
       <workItem from="1611584590625" duration="7824000" />
       <workItem from="1611674784298" duration="13469000" />
       <workItem from="1611856953088" duration="6901000" />
-      <workItem from="1611999798674" duration="5573000" />
+      <workItem from="1611999798674" duration="7922000" />
     </task>
     <servers />
   </component>

@@ -46,29 +46,7 @@
     </div>
 @endsection
 @section('scripts')
-    <script src="{{asset(('js/scripts/sort.js'))}}"></script>
-
-
-   <script>
-      $(document).ready(function(){
-         $(".remove").click(function(){
-            rowID = $(this).attr('id');
-
-            $.ajax({
-               url: '/repairs/' + userID,
-               type: 'DELETE',
-               cache: false,
-               data: {
-                  "_token": "{{ csrf_token() }}",
-               },
-               success:function(data){
-                  if(confirm('Jesteś pewny?'))
-                     $("#row-"+rowID).remove()
-               }
-            });
-
-         });
-      });
-   </script>
+    <script src="{{asset(('js/scripts/tableSettings.js'))}}"></script>
+    <script src="{{asset(('js/scripts/ajaxDelete.js'))}}"></script>
 
 @endsection

@@ -91,6 +91,6 @@ class ClientController extends Controller
     public function destroy($id)
     {
         $this->cR->deleteClient($id);
-        return redirect()->route('clients.index');
+//        return redirect()->route('clients.index');
     }
 }

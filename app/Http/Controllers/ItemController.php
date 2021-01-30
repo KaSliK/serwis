@@ -89,6 +89,6 @@ class ItemController extends Controller
     public function destroy($id)
     {
         $this->iR->deleteItem($id);
-        return redirect()->route('items.index');
+//        return redirect()->route('items.index');
     }
 }

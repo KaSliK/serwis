@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{asset('css/addons/datatables-select.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/addons/datatables-select2.min.css')}}">
 
+
 </head>
 
 <body>
@@ -155,7 +156,10 @@
     });
 </script>
 <script src="https://kit.fontawesome.com/3c5516695a.js" crossorigin="anonymous"></script>
-{{--<script src="{{asset(('js/scripts/sort.js'))}}"></script>--}}
+{{--<script src="{{asset(('js/scripts/tableSettings.js'))}}"></script>--}}
+<script>
+   var tokenCSRF = "{{ csrf_token() }}"
+</script>
 @yield('scripts')
 </body>
 </html>

@@ -25,7 +25,7 @@
 
             <tbody>
             @foreach($clients as $client)
-                <tr>
+                <tr id="row-{{$client->id}}">
                     <td class="align-middle">{{$loop->index+1}}</td>
                     <td class="align-middle">{{$client->name}}</td>
                     <td class="align-middle">{{$client->surname}}</td>
@@ -36,13 +36,8 @@
                         <a href="{{route('clients.edit', $client->id)}}" class="btn-floating btn-md btn-green"><i
                                 class="far fa-edit"></i></a>
 
-                        <form style="display: inline;" method="POST"
-                              action="{{ route('clients.destroy', $client->id) }}">
-                            <button onclick="return confirm('Jesteś pewny?');" class="btn-floating btn-md btn-dark"
-                                    type="submit"><i class="fas fa-trash-alt"></i></button>
-                            {{ method_field('DELETE') }}
-                            {{ csrf_field() }}
-                        </form>
+                        <button id="{{$client->id}}"  class="btn-floating btn-md btn-dark remove"
+                                type="submit"><i class="fas fa-trash-alt"></i></button>
 
                     </td>
                 </tr>
@@ -55,6 +50,9 @@
 
 
 @endsection
-@section('script')
-    <script src="{{asset(('js/scripts/sort.js'))}}"></script>
+@section('scripts')
+    <script src="{{asset(('js/scripts/tableSettings.js'))}}"></script>
+    <script src="{{asset(('js/scripts/ajaxDelete.js'))}}"></script>
+
+
 @endsection

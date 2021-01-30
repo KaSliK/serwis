@@ -30,8 +30,8 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
     Route::resource('photos', 'PhotoController');
     Route::resource('contact_details', 'ContactDetailsController');
     Route::get('/example/{id}/gallery', 'BackendController@examplePhotos')->name('examplePhotos');
-    Route::post('/create-user', 'BackendController@createUser')->name('createUser');
-    Route::get('/create-user-form', 'BackendController@createUserForm')->name('createUserForm');
+    Route::post('/create-user', 'BackendController@createUser')->name('createUser')->middleware('CheckAdmin');
+    Route::get('/create-user-form', 'BackendController@createUserForm')->name('createUserForm')->middleware('CheckAdmin');
 
 
     Route::get('/logout1', [Laravel\Fortify\Http\Controllers\AuthenticatedSessionController::class, 'destroy'])->name('logout1');

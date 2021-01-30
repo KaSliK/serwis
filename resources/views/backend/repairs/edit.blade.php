@@ -54,7 +54,7 @@
 
                 <div class="col-12">
                     <div class="row">
-                        <select class="col-6 mdb-select md-form" name="status_id" searchable="Wyszukaj status">
+                        <select class="col-6 mdb-select md-form" id="status_id" name="status_id" searchable="Wyszukaj status">
 
                             <option value="{{$repair->status->id}}" selected>{{$repair->status->name}}</option>
                             @foreach($statuses as $status)
@@ -63,9 +63,8 @@
                         </select>
                         <label class="mdb-main-label">Status</label>
 
-
                         <div id="picked_up" class="md-form md-outline input-with-post-icon datepicker" >
-                            <input placeholder="Wybierz datę wydania" type="text" id="picked_up" class="form-control" name="picked_up">
+                            <input placeholder="Wybierz datę wydania" type="text" id="" class="form-control" name="picked_up">
 
                             <i class="fas fa-calendar input-prefix" ></i>
                         </div>
@@ -91,6 +90,7 @@
 
 
 
+
 @endsection
 @section('scripts')
     <script>
@@ -102,6 +102,15 @@
        $('.datepicker').datepicker({
           inline: true
        });
+    </script>
+    <script>
+       var statusId = document.getElementById('status_id');
+       var pickedUp = document.getElementById('picked_up');
+       statusId.value !== '6' ? pickedUp.hidden = true : '';
+       statusId.onchange = handleIt;
+       function handleIt() {
+          statusId.value !== '6' ? pickedUp.hidden = true : pickedUp.hidden = false;
+       }
     </script>
 
 @endsection

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Serwis\Repositories\BackendRepository;
 use App\Serwis\Repositories\ContactDetailsRepository;
 use Illuminate\Http\Request;
@@ -35,6 +36,17 @@ class BackendController extends Controller
     }
     public function examplePhotos($id) {
         return view('backend.examples.gallery', ['example' => $this->bR->getExampleWithPhotos($id)]);
+    }
+    public function createUserForm() {
+        return view('backend.users.create');
+    }
+
+    public function createUser(Request $request) {
+        return User::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'password' => bcrypt($request->input('password')),
+        ]);
     }
 
 }

@@ -59,7 +59,7 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function role() {
-        return $this->belongsTo('App\Models\Role');
+    public function hasRole() {
+        return $this->belongsTo('App\Models\Role', 'role');
     }
 }

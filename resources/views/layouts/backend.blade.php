@@ -116,6 +116,12 @@
                             class="fas fa-photo-video"></i>
                         Media</a>
                 </li>
+                @if(Auth::user()->hasRole->name === 'admin')
+                <li><a class="collapsible-header waves-effect" href="{{route('createUserForm')}}">
+                        <i class="fas fa-users"></i>
+                        Klienci</a>
+                </li>
+                @endif
                 <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-right"></i>Minimize
                         menu</a>
                 </li>

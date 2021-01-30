@@ -17,7 +17,6 @@ class CheckAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-//        dd(Auth::user()->hasRole->name);
         if(Auth::user()->hasRole->name === 'admin')
         return $next($request);
 

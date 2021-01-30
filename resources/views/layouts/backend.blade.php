@@ -117,7 +117,7 @@
                         Media</a>
                 </li>
                 @if(Auth::user()->hasRole->name === 'admin')
-                <li><a class="collapsible-header waves-effect" href="{{route('createUserForm')}}">
+                <li><a class="collapsible-header waves-effect" href="{{route('users.index')}}">
                         <i class="fas fa-users"></i>
                         Klienci</a>
                 </li>

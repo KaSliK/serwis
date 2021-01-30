@@ -6,8 +6,8 @@
     <div class="separate-line"></div>
 
     <div>
-        <a href="{{route('repairs.create')}}" class="btn btn-sm btn-info"><i
-                class="fa fa-plus "></i> Dodaj</a>
+        <a href="{{route('repairs.create')}}" class="btn btn-sm btn-info float-right"><i
+                class="fa fa-plus"></i> Dodaj</a>
         <table id="dt" class="table table-striped table-bordered table-sm" >
             <thead>
             <tr>
@@ -25,7 +25,7 @@
             @foreach($repairs as $repair)
                 <tr id="row-{{$repair->id}}">
                     <td class="align-middle">{{$repair->id}}</td>
-                    <td class="align-middle">{{$repair->client->getFullName()}} </td>
+                    <td class="align-middle"><a href="{{route('clients.edit',$repair->client->id )}}">{{$repair->client->getFullName()}}</a> </td>
                     <td class="align-middle">{{$repair->item->model}}</td>
                     <td class="align-middle">{{$repair->status->name}}</td>
                     <td class="align-middle">{{$repair->serial_number }}</td>

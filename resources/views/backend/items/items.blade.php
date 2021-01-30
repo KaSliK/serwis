@@ -6,7 +6,7 @@
     <div class="separate-line"></div>
 
     <div>
-        <a href="{{route('items.create')}}" class="btn btn-sm btn-info"><i
+        <a href="{{route('items.create')}}" class="btn btn-sm btn-info float-right"><i
                 class="fa fa-plus "></i> Dodaj</a>
         <table id="dt" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
             <thead>

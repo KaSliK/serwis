@@ -53,8 +53,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-default"
                              aria-labelledby="navbarDropdownMenuLink-333">
-                            <a class="dropdown-item" href="/user/profile">Profile</a>
-                            <a class="dropdown-item" href="/user/api-tokens">Api Tokens</a>
+                            <a class="dropdown-item" href="/user/profile">Profil</a>
 
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -143,7 +142,6 @@
 <script type="text/javascript" src="{{asset('js/modules/material-select/material-select-view.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/modules/material-select/material-select-view-renderer.min.js')}}"></script>
 
-<script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 <script>
     $(document).ready(() => {
         $(".button-collapse").sideNav({
@@ -156,7 +154,6 @@
     });
 </script>
 <script src="https://kit.fontawesome.com/3c5516695a.js" crossorigin="anonymous"></script>
-{{--<script src="{{asset(('js/scripts/tableSettings.js'))}}"></script>--}}
 <script>
    var tokenCSRF = "{{ csrf_token() }}"
 </script>

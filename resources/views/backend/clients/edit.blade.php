@@ -74,7 +74,7 @@
                 <button class="btn blue-gradient float-right" type="submit">{{__('messages.edit')}}</button>
 
                 <a class="btn morpheus-den-gradient float-right white-text"
-                   href="{{route('items.index')}}">{{__('messages.cancel')}}</a>
+                   href="{{url()->previous()}}">{{__('messages.cancel')}}</a>
 
 
             </div>

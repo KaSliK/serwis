@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware'=>'auth:sanctum'], function(){
+
+
+
 
     Route::get('/', 'BackendController@index')->name('dashboard');
     Route::get('/dashboard', 'BackendController@index');

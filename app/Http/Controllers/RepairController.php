@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RepairRequest;
+use App\Models\Repair;
 use App\Serwis\Repositories\ClientRepository;
 use App\Serwis\Repositories\ItemRepository;
 use App\Serwis\Repositories\RepairRepository;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 
 class RepairController extends Controller
@@ -58,7 +60,7 @@ class RepairController extends Controller
      */
     public function show($id)
     {
-
+        return redirect()->route('repairs.index');
     }
 
     /**
@@ -96,4 +98,5 @@ class RepairController extends Controller
         return $this->rR->deleteRepair($id);
 
     }
+
 }

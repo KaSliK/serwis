@@ -81,6 +81,8 @@
                 <a class="btn morpheus-den-gradient float-right white-text"
                    href="{{route('repairs.index')}}">{{__('messages.cancel')}}</a>
 
+                <a class="btn blue-gradient float-right" href="{{route('createPDF', ['id' => $repair->id])}}">PDF</a>
+
 
             </div>
 

@@ -37,6 +37,8 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
 
     Route::get('/logout1', [Laravel\Fortify\Http\Controllers\AuthenticatedSessionController::class, 'destroy'])->name('logout1');
 
+    Route::get('/pdf/repair/{id}', 'BackendController@createPDF')->name('createPDF');
+
 });
 
 

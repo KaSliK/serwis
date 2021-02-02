@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactDetails;
+use App\Models\Repair;
 use App\Models\User;
 use App\Serwis\Repositories\BackendRepository;
 use App\Serwis\Repositories\ContactDetailsRepository;
+use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Http\Request;
 
 class BackendController extends Controller
@@ -48,6 +51,20 @@ class BackendController extends Controller
             'password' => bcrypt($request->input('password')),
         ]);
         return redirect()->back();
+    }
+
+    public function createPDF($id) {
+        $repair = Repair::find($id);
+        $contact_details = ContactDetails::first();
+
+
+        PDF::setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
+//        view()->share('repair', $data);
+        $pdf = PDF::loadView('pdfView', [
+            'repair' => $repair,
+            'details' => $contact_details,
+        ]);
+        return $pdf->stream('pdf_file.pdf');
     }
 
 }

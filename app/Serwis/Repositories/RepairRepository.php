@@ -5,6 +5,7 @@ namespace App\Serwis\Repositories;
 use App\Models\Repair;
 
 use App\Models\Status;
+use Barryvdh\DomPDF\PDF;
 use http\Env\Request;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Session;
@@ -53,6 +54,8 @@ class RepairRepository {
     public function getStatuses() {
         return Status::all();
     }
+
+
 
 
 

@@ -24,6 +24,8 @@ class CreateRepairsTable extends Migration
             $table->string('serial_number');
             $table->date('picked_up')->nullable();
             $table->text('description')->nullable();
+            $table->text('repair_details')->nullable();
+            $table->text('comments')->nullable();
             $table->integer('price');
             $table->timestamps();
         });

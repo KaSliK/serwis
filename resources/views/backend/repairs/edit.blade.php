@@ -50,6 +50,16 @@
                     <textarea name="description" id="description" class="md-textarea form-control" rows="3">{{$repair->description}}</textarea>
                     <label for="description">Opis</label>
                 </div>
+                <div class="col-12 md-form">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea name="repair_details" id="repair_details" class="md-textarea form-control" rows="3">{{$repair->repair_details}}</textarea>
+                    <label for="repair_details">Diagnoza i opis naprawy</label>
+                </div>
+                <div class="col-12 md-form">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea name="comments" id="comments" class="md-textarea form-control" rows="3">{{$repair->comments}}</textarea>
+                    <label for="comments">Uwagi dodatkowe</label>
+                </div>
 
 
                 <div class="col-12">

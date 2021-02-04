@@ -49,8 +49,14 @@
                     <label for="description">Opis</label>
                 </div>
 
-                <input hidden type="date" name="picked_up" id="picked_up"
-                       value="{{ date('Y-m-d')}}">
+                <div class="col-12 md-form">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea name="comments" id="comments" class="md-textarea form-control" rows="3"></textarea>
+                    <label for="comments">Uwagi dodatkowe</label>
+                </div>
+
+{{--                <input hidden type="date" name="picked_up" id="picked_up"--}}
+{{--                       value="{{ date('Y-m-d')}}">--}}
                 <input hidden type="text" name="status_id" id="status_id"
                        value="1">
 

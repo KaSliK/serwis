@@ -27,6 +27,7 @@ class CreateRepairsTable extends Migration
             $table->text('repair_details')->nullable();
             $table->text('comments')->nullable();
             $table->integer('price');
+            $table->bigInteger('identifier')->unsigned();
             $table->timestamps();
         });
     }

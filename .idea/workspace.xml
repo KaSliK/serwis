@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Repair.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Repair.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Serwis/Repositories/RepairRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serwis/Repositories/RepairRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/RepairFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/RepairFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_21_170835_create_repairs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/repairs/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/repairs/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/repairs/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/repairs/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +180,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/repairs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -184,16 +189,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\panel\app\Panel" />
-      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend\repairs" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\views" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend\users" />
       <recent name="C:\xampp\htdocs\serwis_app\app\Serwis\Repositories" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\js" />
-      <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\panel\app\Panel" />
+      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,7 +248,8 @@
       <workItem from="1611674784298" duration="13469000" />
       <workItem from="1611856953088" duration="6901000" />
       <workItem from="1611999798674" duration="20701000" />
-      <workItem from="1612282393802" duration="9461000" />
+      <workItem from="1612282393802" duration="9930000" />
+      <workItem from="1612448940146" duration="1902000" />
     </task>
     <servers />
   </component>

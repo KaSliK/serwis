@@ -27,7 +27,10 @@ class RepairFactory extends Factory
             'item_id' => $this->faker->numberBetween(1,10),
             'status_id' => $this->faker->numberBetween(1,6),
             'description' => $this->faker->text(50),
+            'repair_details' => $this->faker->text(100),
+            'comments' => $this->faker->text(100),
             'price' => 50,
+            'identifier' => $this->faker->numberBetween(100000000,999999999),
             'serial_number' => $this->faker->numberBetween(100000000,999999999)
         ];
     }

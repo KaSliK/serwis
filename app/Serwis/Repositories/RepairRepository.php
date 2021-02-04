@@ -47,7 +47,9 @@ class RepairRepository {
             'serial_number' => $request->input('serial_number'),
             'picked_up' => date('Y-m-d', strtotime($request->input('picked_up'))),
             'price' => $request->input('price'),
-            'description' => $request->input('description')
+            'description' => $request->input('description'),
+            'comments' => $request->input('comments'),
+            'identifier' => rand(100000000,999999999)
         ]);
     }
 

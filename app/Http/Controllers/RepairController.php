@@ -58,9 +58,11 @@ class RepairController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($rew, $identifier)
     {
-        return redirect()->route('repairs.index');
+
+
+        return view('backend.repairs.show', ['repair' => $this->rR->getRepair($rew-1000)]);
     }
 
     /**

@@ -15,7 +15,10 @@ class Repair extends Model
         'item_id',
         'price',
         'picked_up',
-        'description'
+        'description',
+        'comments',
+        'repair_details',
+        'identifier'
     ];
     use HasFactory;
 

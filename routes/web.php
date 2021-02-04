@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware'=>'auth:sanctum'], function(){
-
-
-
-
     Route::get('/', 'BackendController@index')->name('dashboard');
     Route::get('/dashboard', 'BackendController@index');
     Route::get('/example', 'BackendController@example')->name('example');
@@ -33,6 +29,8 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
     Route::get('/example/{id}/gallery', 'BackendController@examplePhotos')->name('examplePhotos');
     Route::post('/create-user', 'BackendController@createUser')->name('createUser')->middleware('CheckAdmin');
     Route::get('/create-user-form', 'BackendController@createUserForm')->name('createUserForm')->middleware('CheckAdmin');
+
+    Route::get('/repair/{rew}/{identifier}', 'RepairController@show')->name('checkRepair');
 
 
     Route::get('/logout1', [Laravel\Fortify\Http\Controllers\AuthenticatedSessionController::class, 'destroy'])->name('logout1');

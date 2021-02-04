@@ -1,9 +1,28 @@
-@extends('layouts.backend')
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Kamil Kaślikowski">
+    <title>Sprawdź zgłoszenie</title>
+    <link rel="icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables-select.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addons/datatables-select2.min.css')}}">
 
-@section('content')
-    @include('backend.errors')
 
+</head>
 
+<body>
     <p style="font-size: 3rem;" class="text-center font-weight-bolder"><b> Zgłoszenie o rewersie {{$repair->id+1000}}</b></p>
     <div class="separate-line"></div>
         <div class="row justify-content-center">
@@ -47,33 +66,25 @@
 
             </div>
         </div>
-    </form>
 
 
 
 
 
-@endsection
-@section('scripts')
+    <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/addons/datatables.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/addons/datatables2.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/modules/material-select/material-select.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/modules/material-select/material-select-view.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/modules/material-select/material-select-view-renderer.min.js')}}"></script>
+
+
+    <script src="https://kit.fontawesome.com/3c5516695a.js" crossorigin="anonymous"></script>
     <script>
-       // Material Select Initialization
-       $(document).ready(function() {
-          $('.mdb-select').materialSelect();
-       });
-
-       $('.datepicker').datepicker({
-          inline: true
-       });
+       var tokenCSRF = "{{ csrf_token() }}"
     </script>
-    <script>
-       var statusId = document.getElementById('status_id');
-       var pickedUp = document.getElementById('picked_up');
-       statusId.value !== '6' ? pickedUp.hidden = true : '';
-       statusId.onchange = handleIt;
-       function handleIt() {
-          statusId.value !== '6' ? pickedUp.hidden = true : pickedUp.hidden = false;
-          pickedUp.hidden === false ? pickedUp.value = 0 :'';
-       }
-    </script>
-
-@endsection
+</body>
+</html>

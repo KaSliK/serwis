@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\RepairRequest;
 use App\Models\Repair;
+use App\Serwis\Gateways\BackendGateway;
 use App\Serwis\Repositories\ClientRepository;
 use App\Serwis\Repositories\ItemRepository;
 use App\Serwis\Repositories\RepairRepository;
@@ -12,11 +13,12 @@ use Illuminate\Http\Request;
 
 class RepairController extends Controller
 {
-    public function __construct(RepairRepository $repairRepository, ClientRepository $clientRepository, ItemRepository $itemRepository)
+    public function __construct(RepairRepository $repairRepository, ClientRepository $clientRepository, ItemRepository $itemRepository, BackendGateway $backendGateway)
     {
         $this->rR = $repairRepository;
         $this->cR = $clientRepository;
         $this->iR = $itemRepository;
+        $this->bG = $backendGateway;
     }
 
     /**
@@ -60,9 +62,12 @@ class RepairController extends Controller
      */
     public function show($rew, $identifier)
     {
-
-
+        if($this->bG->checkRepairAddress($rew, $identifier))
         return view('backend.repairs.show', ['repair' => $this->rR->getRepair($rew-1000)]);
+        return view('backend.repairs.wrongLink');
+
+
+
     }
 
     /**

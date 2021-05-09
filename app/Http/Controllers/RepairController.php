@@ -31,6 +31,10 @@ class RepairController extends Controller
         return view('backend.repairs.repairs', ['repairs'=>$this->rR->getRepairs()]);
     }
 
+    public function repairPhotos($id) {
+        return view('backend.repairs.gallery', ['example' => $this->rR->getRepairWithPhoto($id)]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

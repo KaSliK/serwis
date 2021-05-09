@@ -21,6 +21,9 @@ class RepairRepository {
     public function getRepair($id) {
         return Repair::find($id);
     }
+    public function getRepairWithPhoto($id) {
+        return Repair::with('photos')->find($id);
+    }
 
     public function updateRepair($request, $id) {
         return Repair::find($id)->update([

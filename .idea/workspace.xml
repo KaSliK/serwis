@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_064454_create_sections_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_064702_create_workers_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Serwis/Repositories/RepairRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serwis/Repositories/RepairRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/repairs/repairs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/repairs/repairs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +23,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -173,6 +190,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/repairs" />
@@ -184,16 +202,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\panel\app\Panel" />
+      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend\repairs" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\views" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\views\backend\users" />
       <recent name="C:\xampp\htdocs\serwis_app\app\Serwis\Repositories" />
       <recent name="C:\xampp\htdocs\serwis_app\resources\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\panel\app\Panel" />
-      <recent name="C:\xampp\htdocs\panel\resources\views\backend\examples" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,7 +265,8 @@
       <workItem from="1612448940146" duration="4022000" />
       <workItem from="1614528990422" duration="4481000" />
       <workItem from="1614601688375" duration="2837000" />
-      <workItem from="1620553671223" duration="6098000" />
+      <workItem from="1620553671223" duration="6741000" />
+      <workItem from="1620578559254" duration="2854000" />
     </task>
     <servers />
   </component>

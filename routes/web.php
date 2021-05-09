@@ -27,6 +27,7 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
     Route::resource('users', 'UserController');
     Route::resource('contact_details', 'ContactDetailsController');
     Route::get('/example/{id}/gallery', 'BackendController@examplePhotos')->name('examplePhotos');
+    Route::get('/repair/{id}/gallery', 'RepairController@repairPhotos')->name('repairPhotos');
     Route::post('/create-user', 'BackendController@createUser')->name('createUser')->middleware('CheckAdmin');
     Route::get('/create-user-form', 'BackendController@createUserForm')->name('createUserForm')->middleware('CheckAdmin');
 

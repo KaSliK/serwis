@@ -33,6 +33,8 @@
                     <td class="align-middle">{{$repair->price }}</td>
                     <td class="text-right">
 
+                        <a href="{{route('repairPhotos', $repair->id)}}" type="button"
+                        class="btn-floating btn-md btn-success"><i class="far fa-images"></i></a>
                         <a href="{{route('repairs.edit', $repair->id)}}" class="btn-floating btn-md btn-green"><i
                                 class="far fa-edit"></i></a>
                         <button id="{{$repair->id}}"  class="btn-floating btn-md btn-dark remove"

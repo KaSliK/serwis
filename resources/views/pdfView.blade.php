@@ -54,17 +54,26 @@
             <div class="border col-4" style="float: left">
                 <span class="font-weight-bold ">Numer rewersu: </span>{{$repair->id+=1000}}<br>
             </div>
-            <div class="border col-3 " style="float: left">
-                <span class="font-weight-bold ">Cena: </span>{{$repair->price}}<br>
-            </div>
-            <div class="border col-3" style="float: left">
-                <span class="font-weight-bold ">S/N: </span>{{$repair->serial_number}}<br>
+            <div class="border col-4" style="float: left">
+                <span class="font-weight-bold ">identyfikator: </span>{{$repair->identifier}}<br>
             </div>
         </div>
+
+    </div>
+    <div>
+        <div class="row">
+        <div class="border col-3 " style="float: left">
+            <span class="font-weight-bold ">Cena: </span>{{$repair->price}}<br>
+        </div>
+        </div>
+    </div>
 
         <div class="border ">
             <span class="font-weight-bold">Sprzęt: </span>{{$repair->item->brand}} {{$repair->item->model}}<br>
         </div>
+    <div class="border ">
+        <span class="font-weight-bold ">S/N: </span>{{$repair->serial_number}}<br>
+    </div>
 
         <div class="border ">
             <span class="font-weight-bold">Opis usterki: </span>{{$repair->description}}{{$repair->description}}{{$repair->description}}<br>

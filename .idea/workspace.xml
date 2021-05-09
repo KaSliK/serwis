@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepairController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Serwis/Gateways/BackendGateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serwis/Gateways/BackendGateway.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/repairs/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/repairs/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pdfView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdfView.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -245,7 +243,10 @@
       <workItem from="1611856953088" duration="6901000" />
       <workItem from="1611999798674" duration="20701000" />
       <workItem from="1612282393802" duration="9930000" />
-      <workItem from="1612448940146" duration="3891000" />
+      <workItem from="1612448940146" duration="4022000" />
+      <workItem from="1614528990422" duration="4481000" />
+      <workItem from="1614601688375" duration="2837000" />
+      <workItem from="1620553671223" duration="3375000" />
     </task>
     <servers />
   </component>

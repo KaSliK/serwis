@@ -20,8 +20,10 @@ class BackendGateway {
     }
 
     public function checkRepairAddress($rew, $identifier) {
-        $repair = $this->rR->getRepair($rew-1000);
-        if($repair->identifier == $identifier) return true;
+        if($identifier>1000) {
+            $repair = $this->rR->getRepair($rew-1000);
+            if($repair->identifier == $identifier) return true;
+        }
         return false;
     }
 }

@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b8f4da-9a28-412c-b2ec-ad3dc125364a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pdfView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pdfView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_064454_create_sections_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_064702_create_workers_table.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +247,7 @@
       <workItem from="1612448940146" duration="4022000" />
       <workItem from="1614528990422" duration="4481000" />
       <workItem from="1614601688375" duration="2837000" />
-      <workItem from="1620553671223" duration="3375000" />
+      <workItem from="1620553671223" duration="6098000" />
     </task>
     <servers />
   </component>

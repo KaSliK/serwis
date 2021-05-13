@@ -53,7 +53,6 @@ class RepairController extends Controller
      */
     public function store(RepairRequest $request)
     {
-//        dd($request->all());
         $this->rR->createRepair($request);
         return redirect()->route('repairs.index');
     }

@@ -47,7 +47,7 @@ class AdminPanelTest extends TestCase
         $this->actingAs(User::find(1))
             ->get('/items')
             ->assertStatus(200)
-            ->assertSee('Klienci');
+            ->assertSee('Urządzenia');
     }
 
     public function testAccessToUsersListOfTheAdminPanelWithLoggedUser(): void
@@ -55,7 +55,7 @@ class AdminPanelTest extends TestCase
         $this->actingAs(User::find(1))
             ->get('/users')
             ->assertStatus(200)
-            ->assertSee('Klienci');
+            ->assertSee('Pracownicy');
     }
 
     public function testLogout(): void

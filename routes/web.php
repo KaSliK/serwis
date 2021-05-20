@@ -31,7 +31,7 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
     Route::post('/create-user', 'BackendController@createUser')->name('createUser')->middleware('CheckAdmin');
     Route::get('/create-user-form', 'BackendController@createUserForm')->name('createUserForm')->middleware('CheckAdmin');
 
-    Route::get('/repair/{rew}/{identifier}', 'RepairController@show')->name('checkRepair');
+
 
     Route::get('/example/{id}/gallery', 'BackendController@examplePhotos')->name('examplePhotos');
 
@@ -41,7 +41,7 @@ Route::group(['middleware'=>'auth:sanctum'], function(){
     Route::get('/pdf/repair/{id}', 'BackendController@createPDF')->name('createPDF');
 
 });
-
+Route::get('/repair/{rew}/{identifier}', 'RepairController@show')->name('checkRepair');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', 'BackendController@index')->name('dashboard');
 

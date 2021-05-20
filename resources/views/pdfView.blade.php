@@ -52,7 +52,7 @@
     <div>
         <div class="row">
             <div class="border col-4" style="float: left">
-                <span class="font-weight-bold ">Numer rewersu: </span>{{$repair->id+=1000}}<br>
+                <span class="font-weight-bold ">Numer rewersu: </span>{{$repair->id+1000}}<br>
             </div>
             <div class="border col-4" style="float: left">
                 <span class="font-weight-bold ">identyfikator: </span>{{$repair->identifier}}<br>
@@ -85,7 +85,7 @@
 <div style="position: absolute; bottom: 15px; font-size: 12px;">..............</div>
 <div style="position: absolute; bottom: 0; right:0; font-size: 12px;">Podpis przyjmującego</div>
 <div style="position: absolute; bottom: 15px; right:0; font-size: 12px;">.....................</div>
-
+<div style="position: absolute; bottom: 100px; left:0; font-size: 12px;">By zobaczyć status zgłoszenia wejdz na stronę https://serwis.srv32745.seohost.com.pl/repair/{{$repair->id+1000}}/{{$repair->identifier}}</div>
 
 </body>
 <style type="text/css">
